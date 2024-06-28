@@ -111,8 +111,8 @@ class PegawaiController extends ResourceController
             'jabatan'   =>'required',
             'hp'        =>'required',
             'email'     =>'required|valid_email',
-            'foto'      =>'max_size[foto,300]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]',
-            'password'  => 'required|min_length[8]',
+            //'foto'      =>'max_size[foto,300]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]',
+            'password'  =>'min_length[8]',
         ]);
 
         if(!$rules){
